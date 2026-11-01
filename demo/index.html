@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Кофейня «Зерно» — демо</title>
+<style>
+  :root{ --bg:#14171b; --card:#1b1f25; --line:#2b313a; --txt:#f2f4f7; --mut:#8b94a1; --acc:#3ddc97; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font:16px/1.6 "Segoe UI",system-ui,sans-serif}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+  header{border-bottom:1px solid var(--line)}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+  .logo{font-weight:700;letter-spacing:.18em;font-size:15px}
+  nav a{color:var(--mut);text-decoration:none;margin-left:28px;font-size:15px}
+  nav a:hover{color:var(--txt)}
+  .hero{padding:96px 0 80px;max-width:640px}
+  .hero h1{font-size:46px;line-height:1.15;letter-spacing:-.02em;margin-bottom:18px}
+  .hero p{color:var(--mut);font-size:18px;margin-bottom:32px}
+  .btn{display:inline-block;background:var(--acc);color:#0f1114;font-weight:600;
+       padding:14px 28px;border-radius:8px;text-decoration:none}
+  .btn:hover{filter:brightness(1.08)}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding-bottom:96px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:26px}
+  .card h3{font-size:17px;margin-bottom:8px}
+  .card p{color:var(--mut);font-size:15px}
+  footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mut);font-size:14px}
+  @media(max-width:720px){ .grid{grid-template-columns:1fr} .hero{padding:64px 0 56px} .hero h1{font-size:34px} }
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <span class="logo">ЗЕРНО</span>
+  <div><a href="#">Меню</a><a href="#">О нас</a><a href="#">Контакты</a></div>
+</nav></div></header>
+
+<div class="wrap">
+  <section class="hero">
+    <h1>Кофе, который варят&nbsp;медленно</h1>
+    <p>Обжариваем сами, каждую неделю. Четыре сорта, один бариста и никакой спешки.</p>
+    <a class="btn" href="#">Посмотреть меню</a>
+  </section>
+
+  <section class="grid">
+    <div class="card"><h3>Своя обжарка</h3><p>Зерно приезжает зелёным, обжигается у нас в зале.</p></div>
+    <div class="card"><h3>Открыто с 8:00</h3><p>Завтраки до полудня, кухня работает весь день.</p></div>
+    <div class="card"><h3>С собой</h3><p>Свой стакан — минус 30 рублей от любого напитка.</p></div>
+  </section>
+</div>
+
+<footer><div class="wrap">Демонстрационная страница · вёрстка ARCHI</div></footer>
+</body>
+</html>
