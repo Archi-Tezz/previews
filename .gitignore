@@ -1,3 +1,11 @@
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# служебное — только локально, в публичный репозиторий не попадает
+_local/
+_gen/
+_build_index.py
+deploy.sh
+deploy.ps1
+deploy.bat
