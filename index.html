@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ARCHI — демо-стенд</title>
+<title>ARCHI — работы</title>
 <style>
   :root{ --bg:#14171b; --card:#1b1f25; --line:#2b313a; --txt:#f2f4f7; --mut:#8b94a1; --acc:#3ddc97; }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -12,24 +12,41 @@
   .mark{display:flex;align-items:center;gap:14px;margin-bottom:10px}
   .bar{width:4px;height:36px;background:var(--acc);border-radius:2px}
   h1{font-size:28px;letter-spacing:.16em;font-weight:700}
-  .sub{color:var(--mut);font-size:15px;letter-spacing:.08em;margin-bottom:48px;padding-left:18px}
-  .list{display:grid;gap:12px}
-  .card{display:flex;justify-content:space-between;align-items:center;
+  .sub{color:var(--mut);font-size:15px;letter-spacing:.08em;margin-bottom:52px;padding-left:18px}
+  .head{color:var(--mut);font-size:12px;letter-spacing:.18em;margin:0 0 14px;font-weight:600}
+  .list{display:grid;gap:12px;margin-bottom:44px}
+  .card{display:flex;justify-content:space-between;align-items:center;gap:16px;
          background:var(--card);border:1px solid var(--line);border-radius:10px;
-         padding:20px 24px;text-decoration:none;color:var(--txt);transition:.15s}
+         padding:18px 24px;text-decoration:none;color:var(--txt);transition:.15s}
   .card:hover{border-color:var(--acc);transform:translateY(-1px)}
-  .name{font-weight:600}
-  .go{color:var(--mut);font-size:14px}
+  .left{display:flex;flex-direction:column;gap:3px;min-width:0}
+  .name{font-weight:600;display:flex;align-items:center;gap:10px}
+  .tag{font-size:11px;font-weight:600;letter-spacing:.08em;color:var(--acc);
+        border:1px solid rgba(61,220,151,.35);border-radius:4px;padding:2px 7px}
+  .note{color:var(--mut);font-size:14px}
+  .go{color:var(--mut);font-size:14px;white-space:nowrap}
   .empty{color:var(--mut)}
-  footer{color:var(--mut);font-size:13px;margin-top:56px;border-top:1px solid var(--line);padding-top:22px}
+  footer{color:var(--mut);font-size:13px;border-top:1px solid var(--line);padding-top:22px}
+  @media(max-width:560px){ .wrap{padding:48px 18px} .go{display:none} }
 </style>
 </head>
 <body>
   <div class="wrap">
     <div class="mark"><div class="bar"></div><h1>ARCHI</h1></div>
-    <div class="sub">ДЕМО-СТЕНД · РАБОТЫ НА ПРОСМОТРЕ</div>
+    <div class="sub">РАЗРАБОТКА САЙТОВ · ВЁРСТКА · PHP / MYSQL</div>
+    <div class="head">ВЫПОЛНЕННЫЕ РАБОТЫ</div>
     <div class="list">
-      <a class="card" href="demo/"><span class="name">demo</span><span class="go">Открыть →</span></a>
+      <a class="card" href="https://45-138-73-155.sslip.io" target="_blank" rel="noopener">
+        <span class="left"><span class="name">Farmila Stats<span class="tag">вживую</span></span><span class="note">Веб-сервис статистики · свой сервер, домен, SSL</span></span>
+        <span class="go">Открыть →</span>
+      </a>
+    </div>
+    <div class="head">ДЕМОНСТРАЦИОННЫЕ СТРАНИЦЫ</div>
+    <div class="list">
+      <a class="card" href="demo/">
+        <span class="left"><span class="name">demo</span><span class="note">демонстрационная страница</span></span>
+        <span class="go">Открыть →</span>
+      </a>
     </div>
     <footer>Обновлено 02.11.2026</footer>
   </div>
